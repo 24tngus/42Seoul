@@ -1,0 +1,819 @@
+{\rtf1\ansi\ansicpg949\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red246\green246\blue246;\red22\green21\blue22;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\cssrgb\c97255\c97255\c97255;\cssrgb\c11373\c10980\c11373;
+}
+\margl1440\margr1440\vieww20280\viewh14680\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u54217 \u44032  \u54637 \u47785 
+\fs30 \cf4 \
+
+\f1\fs50 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+
+\f0\fs30 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u54028 \u54000 \u49496  \u54869 \u51064  lsblk\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 shasum born2beroot.vdi\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 hostname\uc0\u48148 \u44984 \u44592 \
+hostnamectl set-hostname <\uc0\u48148 \u44984 \u44256 \u49910 \u51008 \u51060 \u47492 >\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u54788 \u51116  \u50976 \u51200  \u48320 \u44221 \
+su - root\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u50976 \u51200  \u52628 \u44032 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 groupadd \uc0\u44536 \u47353 \u51060 \u47492 \
+usermod -aG \uc0\u44536 \u47353  \u50976 \u51200 \
+adduser\
+deluser\
+lslogins\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 terminal \uc0\u50896 \u44201 \u51217 \u49549 \
+ssh juhyulee@192.168.56.1 -p 4242\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 ssh \uc0\u51089 \u46041 \u49345 \u53468  \u54869 \u51064 \
+systemctl status ssh\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ufw status verbose //\'a0 ufw \uc0\u54788 \u51116  \u49345 \u53468  \u54869 \u51064 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ##os \uc0\u54869 \u51064 \
+cat /etc/os-release\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ##apparmor \uc0\u54869 \u51064 \
+aa-status\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u54056 \u49828 \u50892 \u46300  \u51221 \u52293 \
+sudo vi /etc/login.defs\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 sudo groupadd\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 sudo \uc0\u54260 \u45908 \u54869 \u51064 \
+sudo ls /var/log/sudo\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ## Group and User\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u50976 \u51200  \u47785 \u47197 \
+```cat /etc/passwd```\
+```grep /bin/bash /etc/passwd```\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u47196 \u44536 \u51064 \u54620  \u49324 \u50857 \u51088  \u54869 \u51064 \
+```lslogins```\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u44536 \u47353 \u47785 \u47197 \
+```cat /etc/group```\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ufw \uc0\u47344  \u54869 \u51064 \
+sudo cat /etc/ufw/user.rules\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u49352  \u47344  \u52628 \u44032 \
+$ sudo ufw allow 8080\
+$ sudo cat /etc/ufw/user.rules\
+\uc0\u49352  \u47344  \u49325 \u51228 \
+$ sudo ufw status numbered\
+$ sudo ufw delete <NUMBER>\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ssh \uc0\u54252 \u53944  \u54869 \u51064 \
+sudo vi /etc/ssh/sshd_config\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 sudo crontab -e\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u47784 \u46304  \u49324 \u50857 \u51088 \u50640 \u44172  \u54364 \u49884 \u54644 \u46972 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ### \uc0\u44536 \u47353 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u49373 \u49457  ```groupadd user42```\
+\uc0\u49325 \u51228  ```groupdel user42```\
+\uc0\u51060 \u47492 \u48320 \u44221  ```groupmod -n user-mod user42``` user42 -> user-mod\
+\uc0\u50976 \u51200  \u52628 \u44032 \
+1. ```usermod```\
+	- \uc0\u50741 \u49496 \
+	- G : \uc0\u50976 \u51200 \u47484  \u44536 \u47353 \u50640  \u49549 \u54616 \u44172  \u47564 \u46316 \
+	- a : \uc0\u44592 \u51316 \u50640 \u45716  1\u44060 \u51032  \u44536 \u47353 \u50640  \u48150 \u50640  \u49549 \u54616 \u51648  \u47803 \u54632 , \u52628 \u44032 \u47196  2\u52264  \u44536 \u47353 \u51012  \u51648 \u51221 \u54624  \u46412  \u49324 \u50857 \
+	- ```usermod -aG sudo,user42 juhyulee```\
+2. ```gpasswd```\
+	- \uc0\u52628 \u44032  ```gpasswd -a juhyulee user42```\
+	- \uc0\u49325 \u51228  ```gpasswd -d juhyulee user42```\
+\uc0\u50976 \u51200 \u44032  \u49549 \u54620  \u44536 \u47353  \u54869 \u51064 \
+1. ```groups juhyulee```\
+2. ```id juhyulee```\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ### \uc0\u50976 \u51200 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 login \uc0\u51473 \u51064  \u50976 \u51200  \u48320 \u44221  ```su username```\
+\uc0\u51060 \u51204  \u49324 \u50857 \u51088 \u47196  \u46028 \u50500 \u44032 \u44592  ```exit```\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u49373 \u49457  ```adduser friend```\
+- \uc0\u48708 \u48128 \u48264 \u54840 \u49444 \u51221 , \u54856  \u46356 \u47113 \u53664 \u47532  \u49373 \u49457 \u46321 \u51032  \u44284 \u51221 \u51012  \u50508 \u50500 \u49436  \u54644 \u51468 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u49325 \u51228  ```userdel friend```\
+- \uc0\u50741 \u49496 \
+- r : \uc0\u54856  \u46356 \u47113 \u53664 \u47532  \u49325 \u51228 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u49325 \u51228  ```deluser friend```\
+- \uc0\u50741 \u49496 \
+- \\-\\-remove : \uc0\u54856  \u46356 \u47113 \u53664 \u47532  \u49325 \u51228 \
+- \\-\\-remove-all-files : \uc0\u54856  \u46356 \u47113 \u53664 \u47532 \u47484  \u54252 \u54632 \u54620  \u44228 \u51221 \u47749 \u51004 \u47196  \u46108  \u47784 \u46304  \u44163  \u49325 \u51228 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u49688 \u51221  ```usermod friend```\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ```cron```\
+service cron start : \uc0\u53356 \u47200  \u49884 \u51089 \
+service cron stop : \uc0\u53356 \u47200  \u51473 \u51648 \
+service cron status : \uc0\u51089 \u46041 \u54869 \u51064 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 wall $(bash /root/monitering.sh)\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ssh \uc0\u47196 \u44536 \u51064  \u49444 \u51221  \u54869 \u51064 \
+cat /etc/ssh/sshd_config | grep "PermitRootLogin"\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u54217 \u44032 \u54017 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 ssh\uc0\u50504 \u50640 \u49436  \u47336 \u53944  \u47196 \u44536 \u51064 \u51060  \u46104 \u45716  \u51060 \u50976 \u47484  \u49444 \u47749 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 lsblk \uc0\u49444 \u47749  \u44032 \u45733 \u54620 \u44032 \
+rm : \uc0\u51060 \u46041  \u44032 \u45733 \u54620  \u46300 \u46972 \u51060 \u48652 \
+R0 : \uc0\u51069 \u44592  \u51204 \u50857  \u46300 \u46972 \u51060 \u48652 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \uc0\u53356 \u47200 \u53485 \u51032  sudo\u54943 \u49688  \u52636 \u47141 \u51060  3\u44060 \u50473  \u52636 \u47141 \u54616 \u45716  \u44221 \u50864 
+\f1\fs50 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\cf2 \'be\'cb\'be\'c6\'be\'df\'c7\'d2 \'b0\'b3\'b3\'e4 \cf0 \
+\
+
+\fs30 ## Hard disk file type\
+\
+### VDI - virtualbox disk image\
+\
+- virtualbox \'bf\'a1\'bc\'ad\'b8\'b8  \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'c6\'f7\'b8\'cb\
+- \'b4\'d9\'b8\'a5 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'bc\'ad \'c7\'d8\'b4\'e7 \'b0\'a1\'bb\'f3\'c8\'af\'b0\'e6\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2\'b6\'a7 virtualbox\'b0\'a1 \'bc\'b3\'c4\'a1\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'be\'df\'c7\'d4\
+\
+### VHD - virtual hard disk\
+\
+- Oracle - virtualbox, ms - hyper-x, citrix - xen \'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d1 \'c6\'f7\'b8\'cb\
+- \'b4\'d9\'b8\'a5 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'c7\'cf\'b7\'c1\'b8\'e9 \'c0\'a7\'bf\'cd \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'bc\'c2\'c1\'df \'c7\'cf\'b3\'aa\'c0\'c7 \'b0\'a1\'bb\'f3\'c8\'ad \'bc\'d2\'c7\'c1\'c6\'ae\'bf\'fe\'be\'ee\'b0\'a1 \'bc\'b3\'c4\'a1\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'be\'df\'c7\'d4\
+\
+### VMDK - virtual machine disk\
+\
+- Oracle - virtualbox, VMware - VMware player \'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\'c7\'d1 \'c6\'f7\'b8\'cb\
+- \'c0\'a7\'bf\'cd \'b8\'b6\'c2\'f9\'b0\'a1\'c1\'f6\'b7\'ce \'b5\'d1 \'c1\'df \'c7\'cf\'b3\'aa\'b0\'a1 \'bc\'b3\'c4\'a1\'b5\'c7\'be\'ee \'c0\'d6\'be\'ee\'be\'df\'c7\'d4\
+\
+## linux file system\
+\
+\'c8\'ae\'c0\'ce\
+- ```lsblk```\
+\
+\'c0\'e5\'c4\'a1\'c0\'cc\'b8\'a7\
+- \'c3\'b9\'b9\'f8\'c2\'b0 \'b9\'df\'b0\'df\'b5\'c8 \'c7\'cf\'b5\'e5\'b5\'f0\'bd\'ba\'c5\'a9 : /dev/sda\
+	- s : scsi \'b9\'e6\'bd\'c4\'c0\'c7\
+		- small computer system interface : \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'cd \'c1\'d6\'ba\'af\'b1\'e2\'b1\'e2\'c0\'c7 \'bf\'ac\'b0\'e1\'c0\'bb \'c0\'a7\'c7\'d1 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+	- d : disk \'c1\'df\'bf\'a1\
+	- a : a \'b9\'f8\'c2\'b0\
+- \'b5\'ce\'b9\'f8\'c2\'b0 \'b9\'df\'b0\'df\'b5\'c8 \'c7\'cf\'b5\'e5\'b5\'f0\'bd\'ba\'c5\'a9 : /dev/sdb\
+- \'c3\'b9\'b9\'f8\'c2\'b0 ~ \'b3\'d7\'b9\'f8\'c2\'b0 \'c6\'c4\'c6\'bc\'bc\'c7 : sda1 ~ sda4\
+- \'c3\'b9\'b9\'f8\'c2\'b0 \'b3\'ed\'b8\'ae \'c6\'c4\'c6\'bc\'bc\'c7 : sda5\
+- \'c3\'b9\'b9\'f8\'c2\'b0 \'b9\'df\'b0\'df\'b5\'c8 cd rom : /dev/sr0\
+\
+- /\
+	- root\
+	- \'b8\'f0\'b5\'e7 \'c6\'c4\'c0\'cf\'c0\'c7 \'c3\'d6\'bb\'f3\'b4\'dc\
+- bin\
+	- binary\
+	- \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'cc \'b5\'e9\'be\'ee\'c0\'d6\'b4\'c2 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+- boot\
+	- \'ba\'ce\'c6\'c3\'bf\'a1 \'c7\'ca\'bf\'e4\'c7\'d1 \'c0\'cc\'b9\'cc\'c1\'f6 \'c6\'c4\'c0\'cf\'b0\'fa \'ba\'ce\'c6\'c3\'c1\'a4\'ba\'b8\'b8\'a6 \'b0\'a1\'c1\'f8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+- dev\
+	- \'bf\'ac\'b0\'e1\'b5\'c8 \'c0\'e5\'c4\'a1\'b5\'e9\'c0\'c7 \'c1\'a4\'ba\'b8\'b0\'a1 \'c0\'fa\'c0\'e5\
+- etc\
+	- \'bd\'c3\'bd\'ba\'c5\'db \'c8\'af\'b0\'e6\'bc\'b3\'c1\'a4\'c0\'cc \'b5\'e9\'be\'ee\'b0\'a1 \'c0\'d6\'c0\'bd\
+- home\
+	- \'bb\'e7\'bf\'eb\'c0\'da \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b5\'e9\'c0\'cc \'c0\'fa\'c0\'e5\
+- root\
+	- \'c0\'a7\'c0\'c7 / \'bf\'cd\'b4\'c2 \'b4\'d9\'b8\'a7\
+	- \'bd\'c3\'bd\'ba\'c5\'db \'b0\'fc\'b8\'ae\'c0\'da\'c0\'c7 \'c8\'a8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+	- \'c0\'cf\'b9\'dd \'bb\'e7\'bf\'eb\'c0\'da\'b4\'c2 \'c1\'a2\'b1\'d9\'c7\'d2 \'bc\'f6 \'be\'f8\'c0\'bd\
+- sbin\
+	- bin \'b0\'fa \'ba\'f1\'bd\'c1\'c7\'cf\'b3\'aa root \'c0\'af\'c0\'fa\'b8\'b8 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'cc \'c0\'d6\'c0\'bd\
+- sys\
+	- \'b8\'ae\'b4\'aa\'bd\'ba \'c4\'bf\'b3\'ce \'b0\'fc\'b7\'c3 \'c1\'a4\'ba\'b8\'b0\'a1 \'b5\'e9\'be\'ee\'c0\'d6\'c0\'bd\
+- tmp\
+	- \'c0\'d3\'bd\'c3 \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'b5\'e9\'be\'ee\'c0\'d6\'b4\'c2 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+	- \'ba\'ce\'c6\'c3\'bd\'c3 \'c3\'ca\'b1\'e2\'c8\'ad\
+- usr\
+	- \'b1\'e2\'ba\'bb\'bd\'c7\'c7\'e0\'c6\'c4\'c0\'cf, \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae, \'c7\'ec\'b4\'f5\'c6\'c4\'c0\'cf\'b5\'ee\'c0\'cc \'c0\'fa\'c0\'e5\'b5\'ca\
+	- \'b4\'eb\'ba\'ce\'ba\'d0\'c0\'c7 \'c0\'c0\'bf\'eb\'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'b0\'fa \'c6\'c4\'c0\'cf\'c0\'cc \'c0\'fa\'c0\'e5\'b5\'c7\'be\'ee \'c0\'d6\'c0\'bd\
+- var\
+	- \'bd\'c3\'bd\'ba\'c5\'db \'bf\'ee\'bf\'b5\'c1\'df \'b8\'b8\'b5\'e9\'be\'ee\'c1\'f8 \'b7\'ce\'b1\'d7\'b0\'a1 \'c0\'fa\'c0\'e5\
+- srv\
+	- \'c1\'d6\'b7\'ce \'bc\'ad\'b9\'f6\'b8\'a6 \'c0\'a7\'c7\'d8 \'b8\'b8\'b5\'e5\'b4\'c2 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\
+	- \'b4\'d9\'b8\'a5 \'bd\'c3\'bd\'ba\'c5\'db\'bf\'a1\'b0\'d4 \'c1\'a6\'b0\'f8\'b5\'c7\'b4\'c2 \'c6\'c4\'c0\'cf\'b5\'e9\'c0\'cc \'c0\'fa\'c0\'e5\'b5\'ca\
+- proc\
+	- \'bd\'c7\'c7\'e0\'c1\'df\'c0\'ce \'c7\'c1\'b7\'ce\'bc\'bc\'bc\'ad, cpu, ram \'b5\'ee\'c0\'c7 \'bd\'c3\'bd\'ba\'c5\'db \'c1\'a4\'ba\'b8\'b0\'a1 \'c0\'fa\'c0\'e5\'b5\'ca\
+- swap\
+	- ram \'c0\'cc \'b0\'a1\'b5\'e6\'c2\'f7 \'b0\'f8\'b0\'a3\'c0\'cc \'ba\'ce\'c1\'b7\'c7\'d2 \'b6\'a7 \'bf\'b9\'ba\'f1 \'b0\'f8\'b0\'a3\'c0\'c7 \'bf\'aa\'c7\'d2\'c0\'bb \'c7\'d4\
+\
+## Storage on phyical hard disk\
+\
+### dynamic allocated\
+\
+- \'c0\'cc\'b8\'a7 \'b1\'d7\'b4\'eb\'b7\'ce\'c0\'c7 \'b5\'bf\'c0\'fb \'c7\'d2\'b4\'e7\
+- \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'b4\'c3\'be\'ee\'b3\'af \'bc\'f6\'b7\'cf \'c7\'d2\'b4\'e7 \'c5\'a9\'b1\'e2\'b0\'a1 \'c1\'f5\'b0\'a1\
+- \'c7\'d1\'b9\'f8 \'c1\'f5\'b0\'a1\'b5\'c8 \'c5\'a9\'b1\'e2\'b4\'c2 \'c1\'d9\'be\'ee\'b5\'e9\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9\
+- \'b0\'f8\'b0\'a3\'c0\'bb \'b5\'bf\'c0\'fb\'c0\'b8\'b7\'ce \'c7\'d2\'b4\'e7\'c7\'d8 \'b0\'f8\'b0\'a3\'c8\'bf\'c0\'b2\'c0\'cc \'c1\'c1\'c0\'b8\'b3\'aa \'bc\'d3\'b5\'b5\'b0\'a1 \'b4\'c0\'b8\'b2\
+\
+### fixed size\
+\
+- \'b0\'a1\'bb\'f3\'b8\'d3\'bd\'c5\'c0\'c7 \'c5\'a9\'b1\'e2\'b8\'a6 \'b0\'ed\'c1\'a4\
+- \'bc\'d3\'b5\'b5\'b4\'c2 \'ba\'fc\'b8\'a3\'b3\'aa \'ba\'d2\'c7\'ca\'bf\'e4\'c7\'d1 \'b0\'f8\'b0\'a3\'c0\'bb \'c1\'a1\'c0\'af\'c7\'cf\'b0\'ed \'c0\'d6\'c0\'bb \'bc\'f6 \'c0\'d6\'be\'ee \'b0\'f8\'b0\'a3\'c8\'bf\'c0\'b2\'c0\'cc \'be\'ca\'c1\'c1\'c0\'bd\
+\
+## LVM - logical volume manager\
+\
+1. PV - physical volume\
+	- \'b9\'b0\'b8\'ae\'c0\'fb\'c0\'ce \'ba\'bc\'b7\'fd\
+	- \'bd\'c7\'c1\'a6 \'b5\'f0\'bd\'ba\'c5\'a9 \
+2. PE - physical extention\
+	- PV \'b8\'a6 \'c0\'cf\'c1\'a4\'c7\'d1 \'c5\'a9\'b1\'e2 - 4MB - \'b7\'ce \'b3\'aa\'b4\'ab \'b0\'cd\
+	- \'c8\'c4\'bf\'a1 LE \'bf\'cd 1 : 1 \'b4\'eb\'c0\'c0\'b5\'c8\'b4\'d9 \
+3. VG - volume group\
+	- PV \'b5\'e9\'c0\'c7 \'c1\'fd\'c7\'d5\
+	- \'bf\'a9\'b1\'e2\'bc\'ad \'b4\'d9\'bd\'c3 LV \'b7\'ce \'c7\'d2\'b4\'e7 \'c7\'d8 \'c1\'d8\'b4\'d9\
+4. LV - logical volume\
+	- \'bd\'c7\'c1\'a6\'b7\'ce \'bb\'e7\'bf\'eb\'c0\'da\'b0\'a1 \'b4\'d9\'b7\'e7\'b0\'d4 \'b5\'c7\'b4\'c2 \'b3\'ed\'b8\'ae\'c0\'fb\'c0\'ce \'c0\'fa\'c0\'e5\'bc\'d2\
+5. LE - logical extention\
+	- PE \'bf\'cd 1 : 1 \'b4\'eb\'c0\'c0\'b5\'c7\'b4\'c2 4MB \'c0\'c7 \'b1\'b8\'bc\'ba\'b4\'dc\'c0\'a7\
+	- LV \'b8\'a6 \'b1\'b8\'bc\'ba\'c7\'cf\'b4\'c2 \'b4\'dc\'c0\'a7\
+\
+### LVM \'b1\'b8\'bc\'ba\
+\
+- pv \'b8\'a6 \'b8\'f0\'be\'c6 vg \'b7\'ce \'b1\'b8\'bc\'ba\'c7\'d1 \'b5\'da \'bf\'f8\'c7\'cf\'b4\'c2 \'b8\'b8\'c5\'ad \'ba\'d0\'c7\'d2\'c7\'cf\'bf\'a9 \'b0\'a2\'b0\'a2\'c0\'c7 lv \'b8\'a6 \'b8\'b8\'b5\'e7\'b4\'d9\
+- \'c0\'cc\'b6\'a7 pe \'bf\'cd le \'b4\'c2 1 : 1 \'b4\'eb\'c0\'c0\'b5\'c7\'be\'ee\'c1\'f8\'b4\'d9\
+- \'c6\'c4\'c0\'cf \'bd\'c3\'bd\'ba\'c5\'db\'bf\'a1\'bc\'ad\'b4\'c2 \'b8\'b6\'c1\'f6\'b8\'b7\'c0\'c7 \'b3\'aa\'b4\'a9\'be\'ee\'c1\'f8 lv \'b8\'a6 \'b0\'a2\'b0\'a2\'c0\'c7 \'b5\'e5\'b6\'f3\'c0\'cc\'ba\'ea\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\
+\
+![[42/born2beroot/LVM.png]]\
+\
+- \'bf\'eb\'b7\'ae\'c0\'c7 \'ba\'ce\'c1\'b7\'c0\'b8\'b7\'ce \'c3\'df\'b0\'a1 \'bf\'eb\'b7\'ae \'c8\'ae\'ba\'b8\'b0\'a1 \'c7\'ca\'bf\'e4\'c7\'d2 \'bd\'c3 \'bb\'f5\'b7\'ce\'bf\'ee \'b5\'f0\'bd\'ba\'c5\'a9\'b8\'a6 \'c3\'df\'b0\'a1\'c7\'d1 \'c8\'c4 vg\'bf\'a1 \'c6\'ed\'c0\'d4\
+- \'bf\'eb\'b7\'ae\'c0\'cc \'ba\'ce\'c1\'b7\'c7\'d1 \'b5\'e5\'b6\'f3\'c0\'cc\'ba\'ea\'bf\'a1 \'bf\'eb\'b7\'ae\'c0\'bb \'c3\'df\'b0\'a1\'c7\'d8 \'c1\'d6\'b4\'c2 \'b0\'cd \'b8\'b8\'c0\'b8\'b7\'ce \'c8\'ae\'c0\'e5\'c0\'bb \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9\
+- \'c0\'af\'bf\'ac\'c7\'d1 \'b5\'f0\'bd\'ba\'c5\'a9 \'b0\'fc\'b8\'ae\'b0\'a1 \'c0\'e5\'c1\'a1\
+\
+## ssh\
+\
+ssh \'c0\'db\'b5\'bf\'bb\'f3\'c5\'c2 \'c8\'ae\'c0\'ce\'c7\'cf\'b1\'e2\
+```systemctl status ssh```\
+\
+/etc/ssh/sshd_config \'be\'c8\'c0\'c7 \'bc\'b3\'c1\'a4 \'ba\'af\'b0\'e6\
+- SSH \'b4\'c2 4242 port \'b7\'ce\'b8\'b8 \'c0\'db\'b5\'bf\'c7\'d1\'b4\'d9.  \
+	- Port 4242\
+- \'ba\'b8\'be\'c8\'bb\'f3 \'c0\'cc\'c0\'af\'b6\'a7\'b9\'ae\'bf\'a1 ssh\'b8\'a6 \'b7\'e7\'c6\'ae\'b7\'ce \'bf\'ac\'b0\'e1\'c7\'cf\'b8\'e9 \'be\'c8\'b5\'c8\'b4\'d9\
+	- PermitRootLogin no\
+```systemctl restart ssh```\
+\
+\'be\'c6\'c0\'cc\'b8\'c6\'bf\'a1\'bc\'ad ssh \'bf\'ac\'b0\'e1\
+- ```ssh juhyulee@localhost -p 4242```\
+\
+\'c5\'b0\'bd\'d6\'c0\'b8\'b7\'ce \'bf\'ac\'b0\'e1\'c7\'cf\'b1\'e2\
+- \'bc\'ad\'b9\'f6\'bf\'a1 \'b0\'f8\'b0\'b3\'c5\'b0 \'c0\'fc\'b4\'de\
+- ```~/.ssh/authorized_keys``` \'c6\'fa\'b4\'f5\'bf\'a1 \'b0\'f8\'b0\'b3\'c5\'b0 \'b3\'d6\'b1\'e2\
+\
+### \'c0\'db\'b5\'bf\'bf\'f8\'b8\'ae\
+\
+- Secure shell\
+	- shell : \'b8\'ed\'b7\'c9\'be\'ee\'bf\'cd \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'b6\'a7 \'be\'b2\'b4\'c2 \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\
+	- \'c4\'bf\'b3\'ce\'b0\'fa \'bb\'e7\'bf\'eb\'c0\'da \'b0\'a3\'c0\'c7 \'b4\'d9\'b8\'ae \'bf\'aa\'c7\'d2\'c0\'bb \'c7\'d8 \'c1\'d8\'b4\'d9\
+- \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9 \'c5\'eb\'bd\'c5\'c0\'c7 \'be\'cf\'c8\'a3\'c8\'ad \'b9\'e6\'bd\'c4\
+- \'ba\'f1\'b4\'eb\'c4\'aa \'c5\'b0 \'b9\'e6\'bd\'c4\
+	- \'b0\'b3\'c0\'ce\'c5\'b0\'bf\'cd \'b0\'f8\'b0\'b3\'c5\'b0\'c0\'c7 \'c7\'d1\'bd\'d6\
+	- \'c5\'b0\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'d1 \'c2\'ca\'c0\'cc \'b0\'b3\'c0\'ce\'c5\'b0\'b8\'a6 \'ba\'b8\'c0\'af\'c7\'cf\'b0\'ed \'c5\'eb\'bd\'c5\'c0\'bb \'c7\'cf\'b7\'c1\'b0\'ed \'c7\'cf\'b4\'c2 \'c2\'ca\'bf\'a1 \'b0\'f8\'b0\'b3\'c5\'b0\'b8\'a6 \'b3\'d1\'b0\'dc\'c1\'d8\'b4\'d9\
+	- \'b0\'f8\'b0\'b3\'c5\'b0\'b7\'ce \'be\'cf\'c8\'a3\'c8\'ad \'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b4\'c2 \'b0\'b3\'c0\'ce\'c5\'b0\'b7\'ce\'b8\'b8 \'ba\'b9\'c8\'a3\'c8\'ad \'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9\
+	- \'b0\'f8\'b0\'b3\'c5\'b0\'b7\'ce \'be\'cf\'c8\'a3\'c8\'ad \'c7\'d1 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b3\'d1\'b0\'dc\'b9\'de\'be\'c6 \'b0\'b3\'c0\'ce\'c5\'b0\'b7\'ce \'ba\'b9\'c8\'a3\'c8\'ad\'c7\'d8 \'c8\'ae\'c0\'ce\'c0\'cc \'b5\'c7\'b8\'e9 \'c5\'eb\'bd\'c5\'c0\'cc \'bf\'ac\'b0\'e1\'b5\'c8\'b4\'d9\
+- \'b4\'eb\'c4\'aa \'c5\'b0 \'b9\'e6\'bd\'c4\
+	- \'c5\'eb\'bd\'c5\'c0\'cc \'c7\'d1\'b9\'f8 \'bf\'ac\'b0\'e1\'b5\'c7\'b8\'e9 \'c0\'cc\'c8\'c4\'b4\'c2 \'b4\'eb\'c4\'aa\'c5\'b0\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1\'b4\'d9\
+	- \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'b0\'b8\'a6 \'be\'e7\'c2\'ca\'bf\'a1\'bc\'ad \'b0\'a1\'c1\'f6\'b0\'ed \'c0\'d6\'c0\'b8\'b8\'e7 \'c7\'d8\'b4\'e7\'c5\'b0\'b7\'ce \'be\'cf\'c8\'a3\'c8\'ad, \'ba\'b9\'c8\'a3\'c8\'ad\'b8\'a6 \'c7\'d1\'b4\'d9\
+	- \'c7\'d8\'b4\'e7 \'c5\'b0\'b4\'c2 \'b8\'c5\'b9\'f8 \'bf\'ac\'b0\'e1\'b6\'a7 \'b8\'b6\'b4\'d9 \'bb\'f5\'b7\'ce \'bb\'fd\'bc\'ba\'b5\'c7\'b8\'e7 \'bb\'e7\'bf\'eb\'c0\'cc \'b3\'a1\'b3\'aa\'b8\'e9 \'bb\'e8\'c1\'a6\'b5\'c8\'b4\'d9\
+\
+## ufw\
+\
+- Uncomplicated FireWall, \'ba\'b9\'c0\'e2\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'ba \'b9\'e6\'c8\'ad\'ba\'ae\
+- \'b1\'e2\'c1\'b8\'bf\'a1 \'b8\'b9\'c0\'cc \'be\'b2\'c0\'cc\'b4\'f8 IPTables \'b9\'e6\'c8\'ad\'ba\'ae\'c0\'c7 \'c7\'c1\'b7\'d0\'c6\'ae\'bf\'a3\'b5\'e5\'b7\'ce \'b0\'a3\'b4\'dc\'c7\'d1 \'b9\'e6\'c8\'ad\'ba\'ae \'c1\'a6\'be\'ee\'b8\'a6 \'c0\'a7\'c7\'d1 \'c5\'f8\
+- \'b9\'e6\'c8\'ad\'ba\'ae\
+	- \'b3\'bb \'bf\'dc\'ba\'ce\'c0\'c7 \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9 \'c6\'ae\'b7\'a1\'c7\'c8\'c0\'bb \'b0\'a8\'bd\'c3\'c7\'cf\'b8\'e7 \'c1\'a6\'be\'ee\'c7\'d8 \'c1\'d6\'b4\'c2 \'c5\'f8\
+	- \'bd\'c5\'b7\'da\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'bf\'cd \'bd\'c5\'b7\'da\'c7\'d2 \'bc\'f6 \'be\'f8\'b4\'c2 \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'b0\'a3\'c0\'c7 \'c0\'e5\'ba\'ae\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d8\'b4\'d9\
+	- \'bd\'c5\'b7\'da \'bc\'f6\'c1\'d8\'c0\'cc \'b3\'b7\'c0\'ba \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'bf\'a1\'bc\'ad \'b1\'e2\'c1\'b8\'c0\'c7 \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9\'bf\'a1 \'b9\'d9\'b7\'ce \'c1\'a2\'b1\'d9\'c7\'d2 \'bc\'f6 \'be\'f8\'b5\'b5\'b7\'cf \'b8\'b8\'b5\'e9\'be\'ee\'c1\'d8\'b4\'d9\
+\
+```\
+apt-get install ufw\
+ufw status verbose // \'c7\'f6\'c0\'e7 \'bb\'f3\'c5\'c2 \'c8\'ae\'c0\'ce\
+ufw enable // \'b9\'e6\'c8\'ad\'ba\'ae \'c4\'d1\'b1\'e2\
+ufw disable // \'b9\'e6\'c8\'ad\'ba\'ae \'b2\'f4\'b1\'e2\
+\
+ufw show raw // \'b1\'e2\'ba\'bb\'c1\'a4\'c3\'a5 \'ba\'b8\'b1\'e2\
+ufw default deny // \'b1\'e2\'ba\'bb\'c1\'a4\'c3\'a5 \'c2\'f7\'b4\'dc\
+ufw default allow // \'b1\'e2\'ba\'bb\'c1\'a4\'c3\'a5 \'c7\'e3\'bf\'eb\
+\
+ufw allow <port num> // \'c7\'d8\'b4\'e7 \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3 \'c7\'e3\'bf\'eb\
+ufw allow <port num>/tcp // tcp \'bf\'a1\'bc\'ad \'c7\'d8\'b4\'e7\'c6\'f7\'c6\'ae\'b8\'b8 \'c7\'e3\'bf\'eb\
+ufw allow <port num>/udp // udp \'bf\'a1\'bc\'ad \'c7\'d8\'b4\'e7\'c6\'f7\'c6\'ae\'b8\'b8 \'c7\'e3\'bf\'eb\
+ufw deny <port num> // \'c7\'d8\'b4\'e7 \'c6\'f7\'c6\'ae\'b9\'f8\'c8\'a3 \'c2\'f7\'b4\'dc\
+ufw deny <port num>/tcp // tcp \'bf\'a1\'bc\'ad \'c7\'d8\'b4\'e7\'c6\'f7\'c6\'ae\'b8\'b8 \'c2\'f7\'b4\'dc\
+ufw deny <port num>/udp // udp \'bf\'a1\'bc\'ad \'c7\'d8\'b4\'e7\'c6\'f7\'c6\'ae\'b8\'b8 \'c2\'f7\'b4\'dc\
+\
+ufw delete deny 22 // 22\'b9\'f8 \'c6\'f7\'c6\'ae\'b0\'a1 \'c2\'f7\'b4\'dc\'b5\'c7\'be\'fa\'b4\'d9\'b0\'ed \'b0\'a1\'c1\'a4\'c7\'d2\'b6\'a7 \'c7\'d8\'b4\'e7\'b7\'ea\'c0\'bb \'bb\'e8\'c1\'a6\
+\
+ufw allow/deny ssh // ssh \'b6\'f3\'b4\'c2 \'c0\'cc\'b8\'a7\'c0\'c7 \'bc\'ad\'ba\'f1\'bd\'ba\'b8\'ed\'c0\'bb \'c7\'e3\'bf\'eb, \'c2\'f7\'b4\'dc\
+less /etc/service // \'bc\'ad\'ba\'f1\'bd\'ba \'ba\'b8\'b1\'e2\
+\
+ufw allow/deny from <ip address> // \'c7\'d8\'b4\'e7 \'c1\'d6\'bc\'d2\'b7\'ce\'ba\'ce\'c5\'cd\'c0\'c7 \'c1\'a2\'bc\'d3 \'c7\'e3\'bf\'eb\
+```\
+\
+\'b0\'a2\'b0\'a2\'c0\'c7 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'bb \'c1\'b6\'c7\'d5\'c7\'cf\'bf\'a9 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+\
+## sudo\
+\
+- super user do\
+- etc/sudoser \'bf\'a1 \'bc\'b3\'c1\'a4\'c0\'cc \'b5\'e9\'be\'ee\'c0\'d6\'c0\'b8\'b8\'e7 visudo \'b7\'ce \'bf\'ad \'bc\'f6 \'c0\'d6\'b4\'d9\
+- \'c0\'a9\'b5\'b5\'bf\'ec\'c0\'c7 \'b0\'fc\'b8\'ae\'c0\'da \'b1\'c7\'c7\'d1\'c0\'b8\'b7\'ce \'bf\'ad\'b1\'e2 \'bf\'cd \'ba\'f1\'bd\'c1\'c7\'d4\
+- \'b1\'c7\'c7\'d1 \'ba\'ce\'bf\'a9\'bf\'a1 \'b4\'eb\'c7\'d8\'bc\'ad\'b4\'c2 visudo \'bf\'a1 \'bc\'b3\'c1\'a4\'c0\'cc \'b5\'c7\'be\'ee\'c0\'d6\'b4\'d9\
+\
+```\
+apt-get install sudo\
+adduser juhyulee sudo\
+```\
+\
+```sudo update-alternatives --config editor```\
+visudo \'bf\'a1\'b5\'f0\'c5\'cd \'b9\'d9\'b2\'d9\'b1\'e2\
+\
+visudo \'b3\'bb\'bf\'a1\'bc\'ad \'c0\'db\'be\'f7\
+\'be\'d5\'bf\'a1 ```Defaults``` \'ba\'d9\'c0\'cc\'b1\'e2\
+- sudo \'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1 \'c0\'ce\'c1\'f5\'c0\'ba \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b0\'a1 \'bf\'c3\'b9\'d9\'b8\'a3\'c1\'f6 \'be\'ca\'c0\'bb\'b0\'e6\'bf\'ec 3\'c8\'b8\'b7\'ce \'c1\'a6\'c7\'d1\'c7\'d1\'b4\'d9\
+	- passwd_tries=3\
+- sudo \'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'d1 \'c0\'ce\'c1\'f5\'c0\'cc \'c0\'df\'b8\'f8\'b5\'c8 \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b7\'ce \'c0\'ce\'c7\'d8 \'bf\'c0\'b7\'f9\'b0\'a1 \'b9\'df\'bb\'fd\'c7\'cf\'b8\'e9 \'b3\'bb\'b0\'a1 \'bc\'b1\'c5\'c3\'c7\'d1 \'bb\'e7\'bf\'eb\'c0\'da \'c1\'a4\'c0\'c7 \'b8\'de\'bc\'bc\'c1\'f6\'b0\'a1 \'b3\'aa\'bf\'cd\'be\'df \'c7\'d1\'b4\'d9\
+	- badpass_message="message"\
+	- authfail_message="message"\
+- sudo \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'d1 \'b0\'a2\'b0\'a2\'c0\'c7 \'c0\'db\'be\'f7\'c0\'ba \'c0\'d4, \'c3\'e2\'b7\'c2 \'b8\'f0\'b5\'ce \'be\'c6\'c4\'ab\'c0\'cc\'ba\'ea \'b5\'c7\'be\'ee\'be\'df \'c7\'d1\'b4\'d9\
+	- log_input\
+	- log_output\
+- log \'c6\'c4\'c0\'cf\'c0\'ba /var/log/sudo/folder \'bf\'a1 \'c0\'fa\'c0\'e5\'b5\'c8\'b4\'d9\
+	- iolog_dir="/var/log/sudo/"\
+- tty \'b8\'f0\'b5\'e5\'b4\'c2 \'ba\'b8\'be\'c8\'c0\'c7 \'c0\'cc\'c0\'af\'b7\'ce \'c8\'b0\'bc\'ba\'c8\'ad \'b5\'c7\'be\'ee\'be\'df \'c7\'d1\'b4\'d9\
+	- requiretty\
+	- tty \'b0\'a1 \'be\'c6\'b4\'d1 \'b4\'d9\'b8\'a5 \'b0\'f7\'bf\'a1\'bc\'ad sudo \'b8\'ed\'b7\'c9\'be\'ee\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'cf\'b0\'d4 \'c7\'cf\'b4\'c2 \'bf\'c9\'bc\'c7 (ex cron)\
+- sudo \'b0\'e6\'b7\'ce \'c1\'a6\'c7\'d1\
+	- secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/bin:/snap/bin"\
+- TSID\
+	- sudo \'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'c7\'d8\'b4\'e7 \'b7\'ce\'b1\'d7\'b4\'c2 /var/log/sudo \'bf\'a1 TSID= \'c0\'cc\'b6\'f3\'b4\'c2 \'c1\'a2\'b5\'ce\'bb\'e7\'b0\'a1 \'ba\'d9\'c0\'ba \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'bf\'a1 \'c0\'fa\'c0\'e5\'c0\'cc \'b5\'c8\'b4\'d9\
+	- \'c7\'d8\'b4\'e7 TSID \'b4\'c2 36 \'c1\'f8\'b9\'fd 6\'c0\'da\'b8\'ae \'bc\'fd\'c0\'da\'b7\'ce \'c0\'cc\'b7\'e7\'be\'ee\'c1\'ae \'c0\'d6\'c0\'b8\'b8\'e7 2\'c0\'da\'b8\'ae\'be\'bf \'b3\'aa\'b4\'b5\'be\'ee\'bc\'ad \'c7\'cf\'c0\'a7\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b7\'ce \'c0\'fa\'c0\'e5\'c0\'cc \'b5\'c8\'b4\'d9\
+\
+## virtual machin\
+\
+- \'b0\'a1\'bb\'f3\'c8\'ad\
+	- \'b4\'dc\'c0\'cf \'b9\'b0\'b8\'ae \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee \'bd\'c3\'bd\'ba\'c5\'db\'bf\'a1\'bc\'ad \'bf\'a9\'b7\'af \'c8\'af\'b0\'e6\'c0\'bb \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'b1\'e2\'bc\'fa\
+	- \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'b0\'a1 \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee\'c0\'c7 \'b8\'ae\'bc\'d2\'bd\'ba\'b8\'a6 \'ba\'d0\'b8\'ae\'c7\'cf\'bf\'a9 \'b5\'b6\'b8\'b3\'b5\'c8 \'c7\'cf\'b3\'aa\'c0\'c7 \'b0\'a1\'bb\'f3\'c8\'af\'b0\'e6\'c0\'bb \'b8\'b8\'b5\'e9\'be\'ee\'c1\'dc\
+	- \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'b4\'c2 \'b8\'d3\'bd\'c5\'c0\'c7 \'b8\'ae\'bc\'d2\'bd\'ba\'b8\'a6 \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee\'bf\'a1\'bc\'ad \'ba\'d0\'b8\'ae\'c7\'d1 \'c8\'c4 vm\'bf\'a1 \'b9\'e8\'c6\'f7\
+	- \'c7\'d2\'b4\'e7\'b5\'c8 \'b8\'ae\'bc\'d2\'bd\'ba\'b4\'c2 \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'bf\'a1 \'c0\'c7\'bf\'a1 vm\'bf\'a1 \'b8\'c2\'b0\'d4 \'c6\'c4\'c6\'bc\'bc\'c5\'b4\'d7\
+ - hypervisor (\'b0\'a1\'bb\'f3 \'b8\'d3\'bd\'c5 \'b8\'f0\'b4\'cf\'c5\'cd, vmm)\
+	 - \'b0\'a1\'bb\'f3\'b8\'d3\'bd\'c5\'c0\'bb \'bb\'fd\'bc\'ba, \'b1\'b8\'b5\'bf\'c7\'cf\'b4\'c2 \'bc\'d2\'c7\'c1\'c6\'ae\'bf\'fe\'be\'ee\
+	 - \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'bf\'cd \'b0\'a1\'bb\'f3\'b8\'d3\'bd\'c5\'c0\'c7 \'b8\'ae\'bc\'d2\'bd\'ba\'b8\'a6 \'ba\'d0\'b8\'ae\'c7\'cf\'bf\'a9 vm\'c0\'c7 \'bb\'fd\'bc\'ba\'b0\'fa \'b0\'fc\'b8\'ae\'b8\'a6 \'c1\'f6\'bf\'f8\
+	 - \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'b0\'a1 \'bc\'b3\'c4\'a1\'b5\'c7\'be\'ee \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b9\'b0\'b8\'ae \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee - \'c8\'a3\'bd\'ba\'c6\'ae\
+	 - \'b8\'ae\'bc\'d2\'bd\'ba\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2 \'b0\'a2\'b0\'a2\'c0\'c7 vm - \'b0\'d4\'bd\'ba\'c6\'ae\
+	 - cpu, \'b8\'de\'b8\'f0\'b8\'ae, \'bd\'ba\'c5\'e4\'b8\'ae\'c1\'f6\'b5\'ee\'c0\'c7 \'b8\'ae\'bc\'d2\'bd\'ba\'b8\'a6 \'c3\'b3\'b8\'ae\'c7\'d8\'c1\'dc\
+	 - \'b4\'d9\'b8\'a5 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'b8\'a6 \'b3\'aa\'b6\'f5\'c8\'f7 \'b1\'b8\'b5\'bf\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'d4 \'c7\'d8 \'c1\'d8\'b4\'d9\
+- hypervisor type\
+	- \'c0\'af\'c7\'fc 1\
+		- \'ba\'a3\'be\'ee\'b8\'de\'c5\'bb\'bf\'a1 \'b1\'e2\'b9\'dd\
+		- vm \'b8\'ae\'bc\'d2\'bd\'ba\'b8\'a6 \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'b0\'a1 \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee\'bf\'a1 \'c1\'f7\'c1\'a2 \'bf\'b9\'be\'e0\
+		- kvm (\'c4\'bf\'b3\'ce \'b1\'e2\'b9\'dd \'b0\'a1\'bb\'f3 \'b8\'d3\'bd\'c5), hyper-v \'b5\'ee\'c0\'cc \'c0\'cc\'bf\'a1 \'c7\'d8\'b4\'e7\
+			- kvm : \'b8\'ae\'b4\'aa\'bd\'ba\'c0\'bb \'ba\'a3\'be\'ee\'b8\'de\'c5\'bb \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'b7\'ce \'ba\'af\'c8\'af\
+	- \'c0\'af\'c7\'fc 2\
+		- \'c7\'d8\'b4\'e7 \'c7\'cf\'c0\'cc\'c6\'db\'b9\'d9\'c0\'cc\'c0\'fa\'b4\'c2 \'c8\'a3\'bd\'ba\'c6\'c3\'b5\'c7\'be\'ee\'c1\'fc\
+		- vm \'b8\'ae\'bc\'d2\'bd\'ba\'b4\'c2 \'c8\'a3\'bd\'ba\'c6\'ae\'c0\'c7 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'bf\'a1 \'b5\'fb\'b6\'f3 \'bf\'b9\'be\'e0\'b5\'c8 \'c8\'c4 \'c7\'cf\'b5\'e5\'bf\'fe\'be\'ee\'bf\'a1 \'b4\'eb\'c7\'d8 \'bd\'c7\'c7\'e0\
+		- vmware, virtualbox \'b0\'a1 \'c0\'cc \'bf\'a1 \'c7\'d8\'b4\'e7\
+- \'b0\'a1\'bb\'f3\'b8\'d3\'bd\'c5\'c0\'c7 \'c6\'af\'c0\'e5\'c1\'a1\
+	- \'b4\'dc\'c0\'cf \'b1\'e2\'b1\'e2\'bf\'a1 \'b4\'d9\'c1\'df os\'b8\'a6 \'bc\'b3\'c4\'a1\'c7\'d2 \'bc\'f6 \'c0\'d6\'c0\'bd\
+	- \'b0\'a2\'b0\'a2\'c0\'c7 vm \'c0\'ba \'ba\'d0\'b8\'ae\'b5\'c7\'be\'ee\'c0\'d6\'be\'ee \'bb\'f3\'c8\'a3\'b0\'a3\'bf\'a1 \'b9\'e6\'c7\'d8\'b8\'a6 \'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd\
+\
+## debian vs centos\
+\
+- \'b0\'f8\'c5\'eb\'c1\'a1\
+	- linux \'b8\'a6 \'c4\'bf\'b3\'ce\'b7\'ce\'bc\'ad \'bb\'e7\'bf\'eb, linux arm64 \'be\'c6\'c5\'b0\'c5\'d8\'c3\'c4\'c0\'c7 \'b5\'b5\'bf\'f2\'c0\'bb \'b9\'de\'c0\'bd\
+	- \'b9\'ab\'b7\'e1\'c0\'cc\'b8\'e7 \'b1\'e2\'be\'f7\'c0\'c7 \'b5\'b5\'bf\'f2\'c0\'cc \'be\'c6\'b4\'d1 \'c4\'bf\'b9\'c2\'b4\'cf\'c6\'bc\'c0\'c7 \'b5\'b5\'bf\'f2\'c0\'bb \'b9\'de\'be\'c6 \'b0\'b3\'b9\'df, \'b0\'b3\'bc\'b1, \'c6\'d0\'c4\'a1\'b5\'c7\'be\'ee \'bc\'d3\'b5\'b5\'b0\'a1 \'b4\'c0\'b8\'b2\
+- centos\
+	- redhat \'b0\'e8\'bf\'ad\'c0\'c7 RHEL \'c0\'c7 \'b9\'ab\'b7\'e1\'b9\'f6\'c0\'fc\
+	- redhat \'c0\'c7 \'c0\'af\'b7\'e1 \'b9\'e8\'c6\'f7\'c6\'c7\'c0\'ce RHEL \'b8\'a6 \'b7\'ce\'b0\'ed\'b8\'b8 \'b9\'d9\'b2\'e3 \'c3\'e2\'bd\'c3\
+	- RHEL \'b0\'fa \'bf\'cf\'c0\'fc \'b5\'bf\'c0\'cf\
+	- yum, dnf \'b6\'f3\'b4\'c2 \'c6\'d0\'c5\'b0\'c1\'f6 \'b0\'fc\'b8\'ae\'c0\'da\'b8\'a6 \'bb\'e7\'bf\'eb\
+	- \'b1\'e2\'ba\'bb\'c0\'b8\'b7\'ce XFS \'b6\'f3\'b4\'c2 \'c6\'c4\'c0\'cf\'bd\'c3\'bd\'ba\'c5\'db\'c0\'bb \'bb\'e7\'bf\'eb\
+	- \'b8\'de\'c0\'cc\'c0\'fa \'be\'f7\'c1\'a6\'c0\'cc\'c6\'ae\'b4\'c2 \'c0\'fb\'c0\'b8\'b3\'aa \'b9\'f6\'b1\'d7\'c7\'c8\'bd\'ba\'bf\'cd \'b0\'b0\'c0\'ba \'b8\'b6\'c0\'cc\'b3\'ca\'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b0\'a1 \'c0\'da\'c1\'d6\'c0\'d6\'c0\'bd\
+	- 10\'b3\'e2 \'c0\'cc\'bb\'f3 \'b9\'f6\'c0\'fc\'c0\'cc \'ba\'af\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bd, \'bb\'f5\'b7\'ce\'bf\'ee \'b9\'f6\'c0\'fc\'c0\'b8\'b7\'ce\'c0\'c7 \'c0\'cc\'b5\'bf\'c0\'cc \'bd\'b1\'c1\'f6 \'be\'ca\'c0\'bd\
+	- \'bb\'e7\'bd\'c7\'bb\'f3 redhat \'c0\'c7 RHEL \'c0\'bb \'b1\'d7\'b4\'eb\'b7\'ce \'bb\'e7\'bf\'eb\'c7\'cf\'b4\'c2\'b0\'cd\
+	- \'b1\'e2\'be\'f7\'c0\'cc\'b3\'aa \'c7\'d0\'b1\'b3\'b5\'ee\'c0\'c7 \'be\'c8\'c1\'a4\'bc\'ba\'c0\'bb \'ba\'b8\'b4\'c2 \'b1\'d4\'b8\'f0\'c0\'d6\'b4\'c2 \'b0\'f7\'bf\'a1\'bc\'ad \'b8\'b9\'c0\'cc \'bb\'e7\'bf\'eb\
+	- \'c0\'e5\'c1\'a1\
+		- \'b9\'f6\'c0\'fc \'c3\'e2\'bd\'c3\'b0\'a1 \'b4\'c0\'b8\'ae\'c1\'f6\'b8\'b8 \'c7\'d8\'b4\'e7\'b9\'f6\'c0\'fc \'b3\'bb\'bf\'a1\'bc\'ad\'b4\'c2 \'be\'c8\'c1\'a4\'c0\'fb\'c0\'d3\
+	- \'b4\'dc\'c1\'a1\
+		- \'b9\'f6\'c0\'fc \'be\'f7\'c0\'cc \'c8\'fb\'b5\'eb, \'b9\'f6\'c0\'fc\'be\'f7\'ba\'b8\'b4\'d9 \'bb\'f5 \'b9\'f6\'c0\'fc\'c0\'c7 \'bb\'f5 \'bc\'b3\'c4\'a1\'b0\'a1 \'b1\'c7\'c0\'e5\'b5\'c9\'c1\'a4\'b5\'b5\
+		- \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b5\'c8 \'c0\'cf\'ba\'ce \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'ba \'bf\'c0\'b7\'a1\'b5\'c8 centos\'bf\'a1\'bc\'ad \'c0\'db\'b5\'bf\'c7\'cf\'c1\'f6 \'be\'ca\'c0\'bb \'bc\'f6 \'c0\'d6\'c0\'bd\
+		- debian \'ba\'b8\'b4\'d9 \'c0\'fb\'c0\'ba \'c6\'c4\'c0\'cf\'bd\'c3\'bd\'ba\'c5\'db\'b0\'fa \'be\'c6\'c5\'b0\'c5\'d8\'c3\'c4 \'c1\'f6\'bf\'f8\
+		- centos 8 \'c0\'c7 \'c1\'f6\'bf\'f8\'c0\'cc \'c0\'db\'b3\'e2 12\'bf\'f9\'bf\'a1 \'b3\'a1\'c0\'cc\'b3\'b2\
+- debian\
+	- apt \'b8\'a6 \'c6\'d0\'c5\'b0\'c1\'f6 \'b0\'fc\'b8\'ae\'c0\'da\'b7\'ce \'bb\'e7\'bf\'eb\
+	- \'b1\'e2\'ba\'bb\'c0\'b8\'b7\'ce EXT4 \'b6\'f3\'b4\'c2 \'c6\'c4\'c0\'cf \'bd\'c3\'bd\'ba\'c5\'db\'c0\'bb \'bb\'e7\'bf\'eb\
+	- centos \'bf\'a1 \'be\'f8\'b4\'c2 ZFS \'c6\'c4\'c0\'cf\'bd\'c3\'bd\'ba\'c5\'db\'c0\'cc \'c1\'b8\'c0\'e7\
+	- \'b8\'c5 2-3\'b3\'e2\'b8\'b6\'b4\'d9 \'b9\'f6\'c0\'fc \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b0\'a1 \'c0\'d6\'be\'fa\'c0\'bd, \'bb\'f5\'b7\'ce\'bf\'ee \'b9\'f6\'c0\'fc\'c0\'b8\'b7\'ce\'c0\'c7 \'c0\'cc\'b5\'bf\'c0\'cc \'bd\'ac\'bf\'f2\
+	- \'c0\'e5\'c1\'a1\
+		- \'c0\'af\'c0\'fa \'c4\'a3\'c8\'ad\'c0\'fb\'c0\'ce \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba, \'ba\'fc\'b8\'a5 \'bc\'ba\'c0\'e5\
+		- \'b8\'b9\'c0\'ba \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\'bf\'cd \'c6\'c4\'c0\'cf\'bd\'c3\'bd\'ba\'c5\'db, \'be\'c6\'c5\'b0\'c5\'d8\'c3\'c4 \'c1\'f6\'bf\'f8\
+		- \'b8\'b9\'c0\'ba \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b7\'ce \'be\'c8\'c1\'a4\'c0\'fb\
+		- \'c4\'bf\'bd\'ba\'c5\'d2\'c0\'cc \'bd\'ac\'bf\'f2\
+		- \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b0\'a1 \'bd\'ac\'bf\'f2\
+	- \'b4\'dc\'c1\'a1\
+		- \'b1\'e2\'be\'f7\'c4\'a3\'c8\'ad\'c0\'fb\'c0\'cc\'c1\'f6 \'b8\'f8\'c7\'d4\
+		- \'b8\'c5 \'be\'f7\'b5\'a5\'c0\'cc\'c6\'ae\'b0\'a1 \'be\'c8\'c1\'a4\'c0\'fb\'c0\'cc\'c1\'f6\'b4\'c2 \'be\'ca\'c0\'bd\
+		- \'c1\'f6\'bf\'f8\'c0\'cc \'c1\'d6\'b7\'ce \'c4\'bf\'b9\'c2\'b4\'cf\'c6\'bc\'b8\'a6 \'c5\'eb\'c7\'d4\
+		- centos \'bf\'cd\'b4\'de\'b8\'ae \'b1\'e2\'be\'f7\'c0\'c7 \'b5\'b5\'bf\'f2\'c0\'bb \'b9\'de\'c1\'f6 \'b8\'f8\'c7\'d4\
+\
+## Apt vs Aptitude\
+\
+- apt - advanced packaging tool\
+	- \'bc\'d2\'c7\'c1\'c6\'ae\'bf\'fe\'be\'ee\'c0\'c7 \'bc\'b3\'c4\'a1, \'c1\'a6\'b0\'c5\'b8\'a6 \'b0\'fc\'b8\'ae\'c7\'cf\'b4\'c2 \'c5\'f8\
+	- \'bb\'e7\'bf\'eb \'b8\'f1\'c0\'fb\'bf\'a1 \'b5\'fb\'b6\'f3 .deb \'c6\'c4\'c0\'cf\'c0\'bb \'c3\'df\'b0\'a1, \'c1\'a6\'b0\'c5\'c7\'d8\'c1\'d8\'b4\'d9\
+	- \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba \'be\'f8\'c0\'cc cli\'b7\'ce \'bb\'e7\'bf\'eb\
+	- \'bf\'c2\'b6\'f3\'c0\'ce \'b7\'b9\'c6\'f7\'bf\'a1\'bc\'ad \'c6\'d0\'c5\'b0\'c1\'f6\'b8\'a6 \'b4\'d9\'bf\'ee, \'bc\'b3\'c4\'a1\'c7\'cf\'b0\'d4 \'b5\'c8\'b4\'d9\
+	- \'b5\'a5\'ba\'f1\'be\'c8 \'c6\'d0\'c5\'b0\'c1\'f6 \'b0\'fc\'b8\'ae \'bd\'c3\'bd\'ba\'c5\'db\'c0\'ce dpkg \'c0\'c7 \'c7\'c1\'b7\'d0\'c6\'ae \'bf\'a3\'b5\'e5\'b7\'ce \'b0\'ed\'be\'c8\'b5\'c7\'be\'fa\'c0\'b8\'b8\'e7\
+	- apt-rpm \'c0\'bb \'c5\'eb\'c7\'d8 rpm(redhat package manager) \'b6\'c7\'c7\'d1 \'b5\'bf\'c0\'db\'c7\'d2 \'bc\'f6 \'c0\'d6\'b0\'d4 \'b5\'c7\'be\'fa\'b4\'d9\
+- aptitude\
+	- apt \'b8\'a6 \'b4\'f5 \'bd\'b1\'b0\'d4 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b5\'b5\'b7\'cf \'c7\'d8\'c1\'d6\'b4\'c2 apt \'c0\'c7 \'c7\'c1\'b7\'d0\'c6\'ae\'bf\'a3\'b5\'e5 \'c5\'f8\
+	- rpm \'b5\'b5 \'c1\'f6\'bf\'f8\
+	- apt \'c0\'c7 \'b8\'f0\'b5\'e5\'b1\'e2\'b4\'c9 \'c6\'f7\'c7\'d4\
+	- apt \'bf\'cd \'b4\'d9\'b8\'a3\'b0\'d4 \'bb\'e8\'c1\'a6\'bd\'c3 \'c1\'be\'bc\'d3\'b0\'fc\'b0\'e8\'c0\'c7 \'c6\'d0\'c5\'b0\'c1\'f6\'b5\'b5 \'bb\'e8\'c1\'a6\
+	- apt \'bf\'cd \'b4\'d9\'b8\'a3\'b0\'d4 \'bc\'b3\'c4\'a1\'c1\'df \'c3\'e6\'b5\'b9\'bd\'c3 \'c7\'d8\'b0\'e1 \'c1\'a6\'bd\'c3\
+	- \'b4\'eb\'c8\'ad\'c7\'fc \'c0\'ce\'c5\'cd\'c6\'e4\'c0\'cc\'bd\'ba\'b7\'ce \'b4\'f5 \'bd\'b1\'b0\'d4 \'bb\'e7\'bf\'eb \'b0\'a1\'b4\'c9\
+- dpkg > apt > aptitude \'bc\'f8\'c0\'b8\'b7\'ce high level manager\
+\
+## SELinux vs AppArmor\
+\
+### DAC vs MAC\
+\
+- DAC (Discretionary Access Control, \'c0\'d3\'c0\'c7\'c0\'fb \'c1\'a2\'b1\'d9 \'c5\'eb\'c1\'a6)\
+	- \'c0\'fc\'c5\'eb\'c0\'fb\'c0\'ce linux \'bf\'cd unix \'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\
+	- \'c6\'c4\'c0\'cf\'b0\'fa \'c7\'c1\'b7\'ce\'bc\'bc\'bc\'ad\'bf\'a1 \'bc\'d2\'c0\'af\'c0\'da\'b0\'a1 \'c0\'d6\'be\'ee \'bc\'d2\'c0\'af\'c0\'da\'b0\'a1 \'bb\'e7\'bf\'eb\'c0\'da, \'b6\'c7\'b4\'c2 \'b1\'d7\'b7\'ec\'c0\'cc \'c6\'c4\'c0\'cf\'bf\'a1 \'c1\'a2\'b1\'d9\'c7\'cf\'b5\'b5\'b7\'cf \'c7\'e3\'bf\'eb\
+	- root \'bb\'e7\'bf\'eb\'c0\'da\'b4\'c2 dac \'bd\'c3\'bd\'ba\'c5\'db \'c0\'fc\'c3\'bc \'c1\'a2\'b1\'d9 \'b1\'c7\'c7\'d1\'c0\'bb \'b0\'a1\'c1\'fc\
+	- \'b0\'a2\'b0\'a2\'c0\'c7 \'bb\'e7\'bf\'eb\'c0\'da\'b8\'b6\'b4\'d9 \'c1\'a2\'b1\'d9\'b1\'c7\'c7\'d1\'c0\'bb \'b5\'fb\'b7\'ce \'ba\'ce\'bf\'a9\
+	- \'c0\'e5\'c1\'a1\
+		- \'bc\'bc\'ba\'d0\'c8\'ad\'b5\'c8 \'c1\'a2\'b1\'d9\'b1\'c7\'c7\'d1 \'ba\'ce\'bf\'a9\
+	- \'b4\'dc\'c1\'a1\
+		- \'bd\'c3\'bd\'ba\'c5\'db \'c2\'f7\'bf\'f8\'bf\'a1\'bc\'ad\'c0\'c7 \'c0\'cf\'b0\'fd\'c0\'fb\'c0\'ce \'c1\'a2\'b1\'d9\'c1\'a6\'be\'ee \'ba\'ce\'c1\'b7\
+- MAC (Mandatory Access Control, \'b0\'ad\'c1\'a6\'c0\'fb \'c1\'a2\'b1\'d9 \'c5\'eb\'c1\'a6)\
+	- \'b9\'cc\'b8\'ae \'c1\'a4\'c7\'d8\'c1\'f8 \'c1\'a4\'c3\'a5\'b0\'fa \'ba\'b8\'be\'c8\'b5\'ee\'b1\'de\'bf\'a1 \'b5\'fb\'b6\'f3 \'c1\'a2\'b1\'d9 \'c5\'eb\'c1\'a6\
+	- \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'c0\'c7 dac \'bc\'b3\'c1\'a4\'c0\'cc \'ba\'af\'b0\'e6\'b5\'c7\'b4\'f5\'b6\'f3\'b5\'b5 \'b4\'d9\'b8\'a5 \'bb\'e7\'bf\'eb\'c0\'da\'b3\'aa \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'bf\'a1 \'c0\'c7\'c7\'d8 \'bf\'a2\'bc\'bc\'bd\'ba\'b8\'a6 \'b8\'b7\'c0\'bb \'bc\'f6 \'c0\'d6\'c0\'bd\
+	- \'b0\'fc\'b8\'ae\'c0\'da \'b8\'b8\'c0\'cc \'c1\'a2\'b1\'d9\'c1\'a6\'be\'ee\'c0\'c7 \'b1\'d4\'c4\'a2\'c0\'bb \'ba\'af\'b0\'e6\'c7\'d2 \'bc\'f6 \'c0\'d6\'c0\'bd (\'c1\'df\'be\'d3\'c1\'fd\'b1\'c7\'c7\'fc)\
+	- \'b4\'d9\'c1\'df\'bc\'f6\'c1\'d8\'c0\'c7 \'ba\'b8\'be\'c8\'c1\'a4\'c3\'a5 \'b1\'e2\'b9\'dd (\'b5\'ee\'b1\'de\'c0\'bb \'ba\'d0\'b7\'f9\'c7\'cf\'bf\'a9 \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'a2\'b0\'a2 \'ba\'b8\'c8\'a3)\
+	- \'c0\'e5\'c1\'a1\
+		- \'be\'f6\'b0\'dd\'c7\'d1 \'ba\'b8\'be\'c8\
+		- \'b4\'d9\'bc\'f6\'c0\'c7 \'c6\'c4\'c0\'cf\'bf\'a1 \'b4\'eb\'c7\'d1 \'b0\'fc\'b8\'ae \'bf\'eb\'c0\'cc\
+	- \'b4\'dc\'c1\'a1\
+		- \'b1\'b8\'c7\'f6\'b0\'fa \'bf\'ee\'bf\'b5\'c0\'c7 \'ba\'b9\'c0\'e2\'bc\'ba\
+		- \'b8\'f0\'b5\'e7 \'c1\'a2\'b1\'d9\'bf\'a1 \'b4\'eb\'c7\'d8 \'c8\'ae\'c0\'ce\'c7\'cf\'b0\'d4 \'b5\'c7\'b9\'c7\'b7\'ce \'bc\'ba\'b4\'c9\'c0\'c7 \'c0\'fa\'c7\'cf\
+\
+### SELinux (Secuirty-Enhanced Linux)\
+\
+- \'b9\'cc\'b1\'b9 \'b1\'b9\'b0\'a1 \'be\'c8\'ba\'b8\'b1\'b9\'bf\'a1\'bc\'ad \'ba\'b8\'be\'c8\'c0\'cc \'c3\'eb\'be\'e0\'c7\'d1 linux \'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d8 LSM (linux security module)\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8 \'b8\'b8\'b5\'e7 \'ba\'b8\'be\'c8\'bf\'eb \'be\'c6\'c5\'b0\'c5\'d8\'c3\'c4\
+- Redhat \'b0\'e8\'bf\'ad\'c0\'c7 \'bf\'ee\'bf\'b5\'c3\'bc\'c1\'a6\'c0\'ce RHEL, Centos \'bf\'a1\'bc\'ad \'bb\'e7\'bf\'eb\'b5\'ca\
+- \'bd\'c3\'bd\'ba\'c5\'db \'c0\'fc\'c3\'bc\'bf\'a1 \'b4\'eb\'c7\'d1 \'ba\'b8\'be\'c8\'bc\'b3\'c1\'a4 \'b0\'a1\'b4\'c9\
+- \'b0\'a2\'b0\'a2\'c0\'c7 inode \'b9\'f8\'c8\'a3\'b7\'ce \'b0\'b4\'c3\'bc\'b8\'a6 \'c6\'c7\'b4\'dc\
+- MAC \'c0\'fb\'bf\'eb\
+- \'c1\'d6\'c3\'bc : \'bb\'e7\'bf\'eb\'c0\'da, \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5, \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'b5\'ee \'c1\'a2\'b1\'d9\'c7\'cf\'b4\'c2 \'c2\'ca\
+- \'b0\'b4\'c3\'bc : \'c6\'c4\'c0\'cf, \'bc\'d2\'c4\'cf, \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae, \'c0\'e5\'c4\'a1 \'b5\'ee \'c1\'a2\'b1\'d9 \'b4\'e7\'c7\'cf\'b4\'c2 \'c2\'ca\
+- \'b7\'b9\'c0\'cc\'ba\'ed : \'b0\'b4\'c3\'bc\'bf\'a1 \'ba\'d9\'be\'ee\'c0\'d6\'b4\'c2 \'b8\'de\'c5\'b8\'b5\'a5\'c0\'cc\'c5\'cd\
+- \'c1\'a4\'c3\'a5 : \'c1\'d6\'c3\'bc\'b7\'d6 \'b0\'b4\'c3\'bc\'bf\'a1 \'b4\'eb\'c7\'d1 \'c1\'a2\'b1\'d9 \'b1\'c7\'c7\'d1 \'b1\'b8\'c1\'b6\'b8\'a6 \'c1\'a4\'c0\'c7\
+- \'c1\'d6\'c3\'bc\'b0\'a1 \'b0\'b4\'c3\'bc\'bf\'a1 \'c1\'a2\'b1\'d9\'c7\'d2\'b6\'a7 \'c0\'fb\'bf\'eb\'b5\'c8 \'c1\'a4\'c3\'a5\'bf\'a1 \'b8\'c2\'b0\'d4 \'c1\'a2\'b1\'d9 \'bf\'a9\'ba\'ce\'b8\'a6 \'c6\'c7\'b4\'dc\'c7\'d1\'b4\'d9\
+- \'b0\'b4\'c3\'bc\'bf\'a1\'b4\'c2 \'b7\'b9\'c0\'cc\'ba\'ed\'c0\'cc \'ba\'d9\'be\'ee \'b0\'b4\'c3\'bc\'c0\'c7 \'bc\'d3\'bc\'ba\'c0\'bb \'be\'cb\'b7\'c1\'c1\'d8\'b4\'d9\
+\
+### AppArmor (application armor)\
+\
+- \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'ba\'b0\'b7\'ce \'b0\'a2\'b0\'a2\'c0\'c7 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'c7 \'bf\'aa\'b7\'ae\'c0\'bb \'c1\'a6\'c7\'d1\
+- LSM \'c4\'bf\'b3\'ce\'c0\'bb \'c0\'cc\'bf\'eb\'c7\'d8 \'b1\'b8\'c7\'f6\
+- \'b0\'a2\'b0\'a2\'c0\'c7 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'bf\'a1 \'c1\'a2\'b1\'d9\'c7\'cf\'b4\'c2 \'b0\'e6\'b7\'ce\'b8\'a6 \'c8\'ae\'c0\'ce\'c7\'cf\'bf\'a9 \'c6\'c7\'b4\'dc\
+	- selinux \'bf\'a1\'bc\'ad\'bf\'cd \'b4\'d9\'b8\'a5\'ba\'ce\'ba\'d0\
+	- \'c7\'cf\'b5\'e5\'b8\'b5\'c5\'a9\'b7\'ce \'bb\'fd\'bc\'ba\'b5\'c8 \'c6\'c4\'c0\'cf\'c0\'c7 \'b0\'e6\'bf\'ec selinux\'bf\'a1\'bc\'ad\'b4\'c2 \'b0\'b0\'c0\'ba \'c6\'c4\'c0\'cf\'b7\'ce \'b0\'a3\'c1\'d6\'c7\'cf\'b3\'aa apparmor \'bf\'a1\'bc\'ad\'b4\'c2 \'b4\'d9\'b8\'a5\'c6\'c4\'c0\'cf\'b7\'ce \'b0\'a3\'c1\'d6\'bf\'a1 \'c1\'a2\'b1\'d9\'c0\'cc \'b0\'a1\'b4\'c9\'c7\'d8\'c1\'fc\
+- MAC \'c0\'fb\'bf\'eb\
+- \'b0\'b3\'ba\'b0 \'c0\'c0\'bf\'eb\'c7\'c1\'b7\'a1\'b1\'d7\'b7\'a5\'c0\'bb \'ba\'b8\'c8\'a3\'c7\'cf\'b4\'c2 \'c0\'cf\'bf\'a1 \'c1\'fd\'c1\'df\'b5\'c7\'be\'ee\'c0\'d6\'c0\'b8\'b8\'e7 \'b0\'a2\'b0\'a2 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'b4\'dc\'c0\'a7\'c0\'c7 \'ba\'b8\'be\'c8\'c0\'cc \'b1\'b8\'c7\'f6\'b5\'c7\'be\'ee\'c0\'d6\'b4\'d9\
+\
+### AppArmor \'bc\'b3\'c4\'a1\
+\
+\'bc\'b3\'c4\'a1 \'b8\'ed\'b7\'c9\'be\'ee\
+```apt-get apparmor apparmor-profiles apparmor-utils```\
+\'c8\'ae\'c0\'ce\
+```aa-status```\
+\
+## login policy\
+\
+\'be\'cf\'c8\'a3 \'b0\'ad\'c8\'ad \'b6\'f3\'c0\'cc\'ba\'ea\'b7\'af\'b8\'ae\
+```\
+apt-get -y install libpam-pwquality\
+sudo apt install libpam-cracklib\
+```\
+vim /etc/login.defs\
+- PASS_MAX_DAYS = 30\
+- PASS_MIN_DAYS = 2\
+- PASS_WARN_AGE= 7\
+\
+vim /etc/security/pwquality.conf\
+\'b6\'c7\'b4\'c2\
+vim /etc/pam.d/common-password\
+- minlen = 10\
+- maxrepeat = 3\
+- lcredit = -1\
+- dcredit = -1\
+- difok = 7\
+- usercheck = 0\
+- reject_username\
+- enforce_for_root\
+	- root \'b4\'c2 \'c0\'cc\'c0\'fc \'be\'cf\'c8\'a3\'b8\'a6 \'b9\'af\'c1\'f6 \'be\'ca\'b4\'c2\'b4\'d9, \'c1\'ef \'c0\'cc\'c0\'fc \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'bf\'a1 \'c6\'f7\'c7\'d4\'b5\'c7\'b4\'c2~ \'c1\'a4\'c3\'a5\'bf\'a1\'bc\'ad \'b3\'ed\'bf\'dc\'c0\'cc\'b4\'d9\
+\
+\'b1\'e2\'ba\'bb\'c0\'fb\'c0\'b8\'b7\'ce \'bf\'ac\'bc\'d3\'b5\'c8 \'be\'cb\'c6\'c4\'ba\'aa, \'bc\'fd\'c0\'da\'b0\'b0\'c0\'ba \'c1\'a6\'c7\'d1\'c0\'cc \'b0\'c9\'b7\'c1\'c0\'d6\'b4\'d9\
+\
+\'c7\'f6\'c0\'e7 \'c6\'d0\'bd\'ba\'bf\'f6\'b5\'e5 \'c1\'a4\'c3\'a5 \'bc\'f6\'c1\'a4\
+```chage -M 30 -m 2 -W 7 username```\
+\
+\'b0\'e8\'c1\'a4\'c0\'c7 \'c6\'d0\'bd\'ba\'bf\'f6\'b5\'e5 \'c1\'a4\'c3\'a5 \'c8\'ae\'c0\'ce\
+``` chage -l username```\
+\
+\'b0\'e8\'c1\'a4\'c0\'c7 \'c6\'d0\'bd\'ba\'bf\'f6\'b5\'e5 \'bc\'f6\'c1\'a4\
+``` passwd -e username```\
+\
+## port from DHCP\
+\
+ss -tunlp \'bf\'a1\'bc\'ad dhcp client \'c1\'f6\'bf\'ec\'b1\'e2 (68\'c6\'f7\'c6\'ae)\
+- t : TCP socket\
+- u : UDP socket\
+- n : see number instead of host\
+- l : listening socket\
+- p : process using socket\
+- \'c1\'ef \'bb\'e7\'bf\'eb\'c1\'df\'c0\'ce \'b8\'f0\'b5\'e7 port \'b8\'a6 \'ba\'b8\'bf\'a9\'c1\'d8\'b4\'d9\
+DHCP \'b4\'eb\'bd\'c5 Static IP\'b7\'ce \'bc\'b3\'c1\'a4  \
+ip route \'b8\'ed\'b7\'c9\'be\'ee\
+- \'c7\'f6\'c0\'e7 \'c7\'d2\'b4\'e7\'b5\'c8 ip\'bf\'cd gateway \'c8\'ae\'c0\'ce\
+\
+![[42/born2beroot/ip route.png]]\
+\
+gateway : 10.0.2.2\
+ip : 10.0.2.15\
+\
+vim /etc/network/interfaces\
+\
+![[42/born2beroot/interface.png]]\
+\
+- DHCP \'ba\'ce\'ba\'d0\'c0\'bb \'c1\'d6\'bc\'ae\'c3\'b3\'b8\'ae \'c7\'d1 \'b5\'da\
+- IP \'bf\'cd gateway \'ba\'ce\'ba\'d0 \'bc\'f6\'c1\'a4\
+- ifdown, ifup, reboot \'c7\'d1 \'b5\'da ss\'b7\'ce \'c0\'e7\'c8\'ae\'c0\'ce\
+\
+## Group and User\
+\
+\'c0\'af\'c0\'fa \'b8\'f1\'b7\'cf\
+```cat /etc/passwd```\
+```grep /bin/bash /etc/passwd```\
+\
+\'b7\'ce\'b1\'d7\'c0\'ce\'c7\'d1 \'bb\'e7\'bf\'eb\'c0\'da \'c8\'ae\'c0\'ce\
+```lslogins```\
+\
+\'b1\'d7\'b7\'ec\'b8\'f1\'b7\'cf\
+```cat /etc/group```\
+\
+### \'b1\'d7\'b7\'ec\
+\
+\'bb\'fd\'bc\'ba ```groupadd user42```\
+\'bb\'e8\'c1\'a6 ```groupdel user42```\
+\'c0\'cc\'b8\'a7\'ba\'af\'b0\'e6 ```groupmod -n user-mod user42``` user42 -> user-mod\
+\'c0\'af\'c0\'fa \'c3\'df\'b0\'a1\
+1. ```usermod```\
+	- \'bf\'c9\'bc\'c7\
+	- G : \'c0\'af\'c0\'fa\'b8\'a6 \'b1\'d7\'b7\'ec\'bf\'a1 \'bc\'d3\'c7\'cf\'b0\'d4 \'b8\'b8\'b5\'eb\
+	- a : \'b1\'e2\'c1\'b8\'bf\'a1\'b4\'c2 1\'b0\'b3\'c0\'c7 \'b1\'d7\'b7\'ec\'bf\'a1 \'b9\'db\'bf\'a1 \'bc\'d3\'c7\'cf\'c1\'f6 \'b8\'f8\'c7\'d4, \'c3\'df\'b0\'a1\'b7\'ce 2\'c2\'f7 \'b1\'d7\'b7\'ec\'c0\'bb \'c1\'f6\'c1\'a4\'c7\'d2 \'b6\'a7 \'bb\'e7\'bf\'eb\
+	- ```usermod -aG sudo,user42 donyoki```\
+2. ```gpasswd```\
+	- \'c3\'df\'b0\'a1 ```gpasswd -a dongyoki user42```\
+	- \'bb\'e8\'c1\'a6 ```gpasswd -d dongyoki user42```\
+\'c0\'af\'c0\'fa\'b0\'a1 \'bc\'d3\'c7\'d1 \'b1\'d7\'b7\'ec \'c8\'ae\'c0\'ce\
+1. ```groups dongyoki```\
+2. ```id dongyoki```\
+\
+### \'c0\'af\'c0\'fa\
+\
+login \'c1\'df\'c0\'ce \'c0\'af\'c0\'fa \'ba\'af\'b0\'e6 ```su username```\
+\'c0\'cc\'c0\'fc \'bb\'e7\'bf\'eb\'c0\'da\'b7\'ce \'b5\'b9\'be\'c6\'b0\'a1\'b1\'e2 ```exit```\
+\
+\'bb\'fd\'bc\'ba ```useradd friend```\
+- \'bf\'c9\'bc\'c7\
+- m : \'c8\'a8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b5\'b5 \'c7\'d4\'b2\'b2 \'bb\'fd\'bc\'ba\
+- g : \'b1\'d7\'b7\'ec \'c1\'f6\'c1\'a4\
+- d : \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'c1\'f6\'c1\'a4\
+- s : \'bd\'a9 \'c1\'f6\'c1\'a4\
+- p : \'be\'cf\'c8\'a3 \'c1\'f6\'c1\'a4\
+\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3 \'bb\'fd\'bc\'ba ```passwd friend```\
+\
+\'bb\'fd\'bc\'ba ```adduser friend```\
+- \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'bc\'b3\'c1\'a4, \'c8\'a8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'bb\'fd\'bc\'ba\'b5\'ee\'c0\'c7 \'b0\'fa\'c1\'a4\'c0\'bb \'be\'cb\'be\'c6\'bc\'ad \'c7\'d8\'c1\'dc\
+\
+\'bb\'e8\'c1\'a6 ```userdel friend```\
+- \'bf\'c9\'bc\'c7\
+- r : \'c8\'a8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'bb\'e8\'c1\'a6\
+\
+\'bb\'e8\'c1\'a6 ```deluser friend```\
+- \'bf\'c9\'bc\'c7\
+- \\-\\-remove : \'c8\'a8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'bb\'e8\'c1\'a6\
+- \\-\\-remove-all-files : \'c8\'a8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'b8\'a6 \'c6\'f7\'c7\'d4\'c7\'d1 \'b0\'e8\'c1\'a4\'b8\'ed\'c0\'b8\'b7\'ce \'b5\'c8 \'b8\'f0\'b5\'e7 \'b0\'cd \'bb\'e8\'c1\'a6\
+\
+\'bc\'f6\'c1\'a4 ```usermod friend```\
+\
+### hostname\
+\
+\'c8\'ae\'c0\'ce\
+- ```hostnamectl```\
+\'ba\'af\'b0\'e6\
+- ```hostnamectl set-hostname newname```\
+\
+## cron\
+\
+unix \'b1\'e2\'b9\'dd \'c4\'c4\'c7\'bb\'c5\'cd\'c0\'c7 time based job scheduler\
+\
+```crontab```\
+- \'bf\'c9\'bc\'c7\
+- l : \'b8\'ae\'bd\'ba\'c6\'ae \'ba\'b8\'b1\'e2\
+- r : \'b8\'ed\'b7\'c9\'be\'ee \'c1\'f6\'bf\'ec\'b1\'e2\
+- e : \'b8\'ed\'b7\'c9\'be\'ee \'c3\'df\'b0\'a1\
+\
+```cron```\
+service cron start : \'c5\'a9\'b7\'d0 \'bd\'c3\'c0\'db\
+service cron stop : \'c5\'a9\'b7\'d0 \'c1\'df\'c1\'f6\
+service cron status : \'c0\'db\'b5\'bf\'c8\'ae\'c0\'ce\
+service cron restart : crontab \'bc\'f6\'c1\'a4\'c8\'c4...\'c0\'e7\'bd\'c3\'c0\'db\
+systemctl disable cron : \'c5\'a9\'b7\'d0 \'b2\'f4\'b1\'e2(\'c0\'e7\'bd\'c3\'b5\'bf\'c7\'d8\'b5\'b5 \'b2\'a8\'c1\'fc)\
+systemctl enable cron : \'c5\'a9\'b7\'d0 \'b2\'f4\'b1\'e2(\'c0\'e7\'bd\'c3\'b5\'bf\'c7\'d8\'b5\'b5 \'b2\'a8\'c1\'fc)\
+\
+\\* * * * *\
+1. \'b8\'c5\'bd\'c3 n\'ba\'d0\
+2. \'b8\'c5\'c0\'cf n\'bd\'c3\
+3. \'b8\'c5\'bf\'f9 n\'c0\'cf\
+4. \'b8\'c5\'b3\'e2 n\'bf\'f9\
+5. \'b8\'c5\'c1\'d6 n\'bf\'e4\'c0\'cf (\'c0\'cf-\'c5\'e4 <=> 0-6)\
+\
+\\* : \'b8\'f0\'b5\'e7 \'b0\'aa\
+? : \'c6\'af\'c1\'a4\'c7\'d1 \'81\'a3\'c0\'cc \'be\'f8\'c0\'bd\
+\\- : \'b9\'fc\'c0\'a7 (ex) 8-10)\
+, : \'c6\'af\'c1\'a4 \'b6\'a7\
+- ex) '\'bd\'c3' \'c0\'da\'b8\'ae\'bf\'a1 1, 3 \'c0\'cc\'b8\'e9 \'b8\'c5\'c0\'cf 1\'bd\'c3 3\'bd\'c3\'bf\'a1\
+/ : \'b8\'c5 n \'b8\'b6\'b4\'d9\
+- ex) '\'ba\'d0' \'c0\'da\'b8\'ae\'bf\'a1 \\*/5 \'b6\'f3\'b0\'ed \'b5\'c7\'be\'ee\'c0\'d6\'c0\'b8\'b8\'e9 5\'ba\'d0\'bf\'a1 \'c7\'d1\'b9\'f8\
+L : '\'c0\'cf'\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b8\'b6\'c1\'f6\'b8\'b7\'c0\'cf, '\'bf\'e4\'c0\'cf'\'bf\'a1 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 \'b8\'b6\'c1\'f6\'b8\'b7 \'bf\'e4\'c0\'cf(\'c5\'e4\'bf\'e4\'c0\'cf)\
+\
+## script\
+\
+![[42/born2beroot/script.png]]\
+\
+- uname : \'bd\'c3\'bd\'ba\'c5\'db \'c1\'a4\'ba\'b8 \'c3\'e2\'b7\'c2, \'c1\'d6\'b7\'ce \'bd\'c3\'bd\'ba\'c5\'db\'b0\'fa \'c4\'bf\'b3\'ce \'c1\'a4\'ba\'b8\
+- nproc : physical processor \'b0\'b9\'bc\'f6 \'c3\'e2\'b7\'c2\
+- free : ram \'c1\'a4\'ba\'b8\
+- df : disk free, disk \'c1\'a4\'ba\'b8\
+- mpstat : sysstat \'c6\'d0\'c5\'b0\'c1\'f6\'bf\'a1 \'c6\'f7\'c7\'d4, \'c7\'c1\'b7\'ce\'bc\'bc\'bc\'ad\'c0\'c7 \'c1\'a4\'ba\'b8\
+- who : \'bb\'e7\'bf\'eb\'c0\'da \'c3\'e2\'b7\'c2\
+- lsblk : \'b8\'ae\'b4\'aa\'bd\'ba\'c0\'c7 \'bd\'ba\'c5\'e4\'b8\'ae\'c1\'f6 \'c1\'a4\'ba\'b8 \'c3\'e2\'b7\'c2\
+- ss : socket statistics, \'b3\'d7\'c6\'ae\'bf\'f6\'c5\'a9, \'bc\'d2\'c4\'cf\'bb\'f3\'c5\'c2 \'c8\'ae\'c0\'ce\
+	- \'bc\'d2\'c4\'cf : \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'bc\'db, \'bc\'f6\'bd\'c5 \'c7\'cf\'b1\'e2\'c0\'a7\'c7\'d1 \'c3\'a2\'b1\'b8\
+	- \'c7\'c1\'b7\'ce\'c5\'e4\'c4\'dd, ip\'c1\'d6\'bc\'d2, \'c6\'f7\'c6\'ae\'b3\'d1\'b9\'f6\'b7\'ce \'c1\'a4\'c0\'c7\'b5\'c7\'be\'ee\'c1\'fc\
+- journalctl : journal \'c0\'cc\'b6\'f3\'b4\'c2 \'b9\'d9\'c0\'cc\'b3\'ca\'b8\'ae \'c7\'fc\'bd\'c4\'c0\'b8\'b7\'ce \'c0\'fa\'c0\'e5\'b5\'c7\'be\'ee\'c1\'f8 \'b7\'ce\'b1\'d7\'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'b0\'cb\'bb\'f6, \'c1\'b6\'c8\'b8\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\
+	- TSID : sudo \'b7\'ce \'bb\'e7\'bf\'eb \'b5\'c8 \'b1\'e2\'b7\'cf\'b5\'e9\'c0\'ba \'bc\'b3\'c1\'a4\'c7\'d1 /var/log/sudo \'bf\'a1 6\'c0\'da\'b8\'ae 36\'c1\'f8\'bc\'f6\'b7\'ce \'b5\'c8 \'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae\'bf\'a1 \'b1\'e2\'b7\'cf\'c0\'cc \'b5\'c7\'b8\'e7, \'c0\'cc \'bc\'fd\'c0\'da\'b8\'a6 TSID \'b6\'f3\'b0\'ed \'c7\'d1\'b4\'d9\
+	- journalctl \'bf\'a1\'bc\'ad TSID \'b7\'ce grep \'c0\'bb \'c7\'cf\'b8\'e9 sudo \'b7\'ce \'bd\'c7\'c7\'e0 \'b5\'c8 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'c7 \'b1\'e2\'b7\'cf\'c0\'cc \'b3\'aa\'bf\'c0\'b8\'e7 \'c7\'d8\'b4\'e7 \'c1\'d9\'c0\'c7 \'bc\'f6\'b8\'a6 \'b0\'a1\'c1\'ae\'bf\'c0\'b8\'e9 \'b5\'c8\'b4\'d9\
+\
+## PID, tty\
+\
+PID\
+- process id\
+- \'bd\'c7\'c7\'e0\'c1\'df\'c0\'ce \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'c0\'c7 \'b9\'f8\'c8\'a3\
+\
+tty\
+- teletypewriter\
+- \'c4\'dc\'bc\'d6, \'c5\'cd\'b9\'cc\'b3\'ce\'c0\'bb \'c0\'c7\'b9\'cc\
+- \'c4\'dc\'bc\'d6\
+	- \'c4\'c4\'c7\'bb\'c5\'cd\'b8\'a6 \'c1\'b6\'c0\'db\'c7\'cf\'b4\'c2 \'c0\'d4\'c3\'e2\'b7\'c2 \'c0\'e5\'c4\'a1\
+- \'c5\'cd\'b9\'cc\'b3\'ce\
+	- \'c4\'dc\'bc\'d6\'c0\'bb \'c1\'b6\'c0\'db\'c7\'cf\'b4\'c2 \'be\'ee\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7\
+- \'b0\'fa\'b0\'c5\'bf\'a1 \'c7\'cf\'b3\'aa\'c0\'c7 \'c4\'c4\'c7\'bb\'c5\'cd\'bf\'a1 \'bf\'a9\'b7\'af\'b4\'eb\'c0\'c7 tty\'b0\'a1 \'bf\'ac\'b0\'e1\'b5\'c7\'be\'ee\'c0\'d6\'be\'ee \'b0\'a2\'b0\'a2\'c0\'c7 tty\'bf\'a1\'bc\'ad \'b7\'ce\'b1\'d7\'c0\'ce \'c8\'c4 \'bb\'e7\'bf\'eb\'c7\'cf\'bf\'b4\'b4\'d9\
+- \'c1\'f6\'b1\'dd\'c0\'ba \'b0\'a2\'b0\'a2\'c0\'c7 tty\'b0\'a1 \'c0\'cf\'c1\'be\'c0\'c7 \'b0\'a1\'bb\'f3\'c4\'dc\'bc\'d6\'c0\'bb emulate \'c7\'cf\'b0\'ed\'c0\'d6\'b4\'d9\
+\
+## systemctl, service, demon\
+\
+demon\
+- \'b8\'ae\'b4\'aa\'bd\'ba\'b8\'a6 \'b0\'a1\'b5\'bf\'c7\'cf\'b8\'e9 \'bd\'c7\'c7\'e0\'b5\'c7\'b4\'c2 \'b9\'e9\'b1\'d7\'b6\'f3\'bf\'ee\'b5\'e5 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\
+- \'bb\'e7\'bf\'eb\'c0\'da\'c0\'c7 \'bf\'e4\'c3\'bb\'c0\'bb \'b9\'de\'be\'c6 \'b4\'eb\'c0\'c0\'c7\'d8 \'c1\'d8\'b4\'d9\
+- \'bc\'ad\'ba\'f1\'bd\'ba \'b6\'f3\'b0\'ed \'ba\'ce\'b8\'a3\'b1\'e2\'b5\'b5 \'c7\'d4\
+- 1\'b9\'f8 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba(PID=1)\'c0\'ce systemd \'c0\'c7 \'b0\'fc\'b8\'ae\'c7\'cf\'bf\'a1 \'c0\'d6\'b4\'d9\
+- \'b5\'a5\'b8\'f3 \'c7\'c1\'b7\'ce\'b1\'d7\'b7\'a5\'c0\'c7 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'ba \'b3\'a1\'bf\'a1 d \'b0\'a1 \'ba\'d9\'be\'ee\'c0\'d6\'b4\'d9 (sshd...)\
+\
+service\
+- \'b8\'ae\'b4\'aa\'bd\'ba \'bf\'a1\'bc\'ad\'b4\'c2 \'b5\'a5\'b8\'f3\'c0\'bb service \'c6\'c4\'c0\'cf\'b7\'ce \'bc\'b3\'c1\'a4\'c7\'cf\'bf\'a9 \'b0\'fc\'b8\'ae\'c7\'cf\'b0\'ed \'c0\'d6\'b4\'d9\
+- \'b1\'e2\'c1\'b8\'c0\'c7 service \'b8\'a6 \'c1\'b6\'c0\'db\'c7\'cf\'b1\'e2 \'c0\'a7\'c7\'d1 \'b8\'ed\'b7\'c9\'be\'ee\
+\
+systemctl\
+- systemd \'b8\'a6 \'b0\'fc\'b8\'ae\'c7\'cf\'b4\'c2 \'b8\'ed\'b7\'c9\'be\'ee\
+- \'b4\'d9\'b8\'a5 \'b5\'a5\'b8\'f3\'b5\'e9\'b5\'b5 systemd \'b0\'fc\'b8\'ae\'c7\'cf\'bf\'a1 \'c0\'d6\'b1\'e2\'b6\'a7\'b9\'ae\'bf\'a1 service \'b4\'eb\'bd\'c5 \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'d9\
+- service \'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b8\'e9 systemctl \'b7\'ce \'b8\'ae\'b4\'d9\'c0\'cc\'b7\'ba\'c6\'c3\'b5\'c8\'b4\'d9\
+\
+## web server\
+\
+wordpress, lighttpd, mariadb \'bf\'a1 \'b4\'eb\'c7\'d1 \'bc\'b3\'b8\'ed\
+- wordpress\
+	- \'bf\'c0\'c7\'c2\'bc\'d2\'bd\'ba\'c0\'c7 \'bc\'b3\'c4\'a1\'c7\'fc \'ba\'ed\'b7\'ce\'b1\'d7, \'c4\'dc\'c5\'d9\'c3\'f7 \'b0\'fc\'b8\'ae \'bd\'c3\'bd\'ba\'c5\'db(cms)\
+	- php \'b7\'ce \'c1\'a6\'c0\'db\'b5\'c7\'be\'fa\'c0\'b8\'b8\'e7 db\'b7\'ce\'b4\'c2 mysql, mariadb \'b0\'a1 \'bb\'e7\'bf\'eb\'b5\'c8\'b4\'d9\
+- mariadb\
+	- \'bf\'c0\'c7\'c2\'bc\'d2\'bd\'ba \'b0\'fc\'b0\'e8\'c7\'fc \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba \'b0\'fc\'b8\'ae \'bd\'c3\'bd\'ba\'c5\'db\
+		- \'c7\'e0, \'bf\'ad\'bf\'a1 \'b1\'e2\'b9\'dd\'c7\'cf\'b4\'c2 \'c5\'d7\'c0\'cc\'ba\'ed \'c7\'fc\'bd\'c4\'c0\'c7 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\
+	- mysql \'b0\'fa \'b0\'b0\'c0\'ba \'bc\'d2\'bd\'ba\'c4\'da\'b5\'e5 \'b1\'e2\'b9\'dd\
+- lighttpd\
+	- \'b0\'e6\'b7\'ae \'c0\'a5 \'bc\'ad\'b9\'f6 \'be\'d6\'c7\'c3\'b8\'ae\'c4\'c9\'c0\'cc\'bc\'c7\
+- fast cgi\
+	- cgi\
+		- \'c1\'a4\'c0\'fb\'c0\'cc\'b4\'f8 \'bc\'ad\'b9\'f6\'b0\'a1 \'b5\'bf\'c0\'fb\'c0\'cc \'b5\'c7\'b8\'e9\'bc\'ad php, python \'b5\'ee\'c0\'c7 \'be\'f0\'be\'ee\'b8\'a6 \'bb\'e7\'bf\'eb\'c7\'cf\'b1\'e2 \'bd\'c3\'c0\'db\
+		- \'c0\'a5\'bc\'ad\'b9\'f6\'b4\'c2 \'c7\'d8\'b4\'e7 \'be\'f0\'be\'ee\'b8\'a6 \'b8\'f0\'b8\'a3\'b1\'e2 \'b6\'a7\'b9\'ae\'bf\'a1 \'c7\'d8\'b4\'e7 \'be\'f0\'be\'ee\'b8\'a6 \'c7\'d8\'bc\'ae\'c7\'cf\'b4\'c2 \'b4\'d9\'b8\'a5\'b0\'cd\'c0\'cc \'c7\'ca\'bf\'e4\
+		- \'c0\'a5\'bc\'ad\'b9\'f6\'bf\'cd \'c7\'d8\'b4\'e7 \'be\'f0\'be\'ee\'b8\'a6 \'c7\'d8\'bc\'ae\'c7\'cf\'b4\'c2 \'c0\'ce\'c5\'cd\'c7\'c1\'b8\'ae\'c5\'cd \'bb\'e7\'c0\'cc\'bf\'a1\'bc\'ad \'b5\'a5\'c0\'cc\'c5\'cd\'b8\'a6 \'c0\'fc\'bc\'db, \'c3\'b3\'b8\'ae\'c7\'d8\'c1\'d6\'b4\'c2 \'b0\'cd\'c0\'cc cgi\
+		- \'bf\'e4\'ab\'8a\'c0\'cc \'b5\'e9\'be\'ee\'bf\'c3\'b6\'a7 \'b8\'b6\'b4\'d9 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b8\'e7 \'b8\'b9\'c0\'ba \'bf\'e4\'c3\'bb\'c0\'cc \'b5\'e9\'be\'ee\'bf\'c0\'b8\'e9 \'ba\'ce\'c7\'cf\'b0\'a1 \'b0\'c9\'b8\'b2\
+	- \'b0\'a2\'b0\'a2\'c0\'c7 \'bf\'e4\'c3\'bb\'bf\'a1 \'c7\'c1\'b7\'ce\'bc\'bc\'bd\'ba\'b8\'a6 \'bb\'fd\'bc\'ba\'c7\'cf\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'d1 \'c7\'cf\'b3\'aa\'c0\'c7 \'c5\'ab \'c7\'c1\'b7\'ce\'bc\'bc\'bc\'ad\'bf\'a1\'bc\'ad \'c0\'fc\'ba\'ce \'c3\'b3\'b8\'ae\'c7\'cf\'b5\'b5\'b7\'cf \'b8\'b8\'b5\'e7\'b0\'d4 fast cgi\
+	- \'c0\'a5\'bc\'ad\'b9\'f6\'bf\'cd php\'bc\'ad\'b9\'f6\'b8\'a6 \'c7\'cf\'b3\'aa\'b7\'ce \'b8\'b8\'b5\'e5\'b4\'c2 \'b0\'cd\'c0\'cc \'be\'c6\'b4\'d1 \'bc\'d2\'c4\'cf\'c5\'eb\'bd\'c5\'c0\'b8\'b7\'ce \'ba\'d0\'b8\'ae\'c7\'cf\'bf\'a9 php \'bc\'ad\'b9\'f6\'b8\'a6 \'b5\'fb\'b7\'ce \'b8\'b8\'b5\'e9 \'bc\'f6 \'c0\'d6\'b4\'c2\'b5\'a5 \'c0\'cc\'b0\'cd\'c0\'bb WAS (web application server) \'b6\'f3\'b0\'ed \'c7\'d4}
